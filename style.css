@@ -51,7 +51,19 @@ button:hover {
     border-radius: 35px;
     background-color: #017257;
 }
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
 
+.footer span {
+    color: #2BB673; /* اللون المميز لهلا */
+    font-weight: bold;
+}
 canvas {
     border-radius: 25px;
     display: block;
