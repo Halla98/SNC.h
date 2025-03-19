@@ -1,57 +1,81 @@
 @font-face {
     font-family: "Tajawal-Medium";
     src: url("Tajawal-Medium.woff2") format("woff2");
-}
-
+/* الأساسيات */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
+/* الحاوية الرئيسية */
 .container {
     position: relative;
     margin-top: 20px;
+    width: 100%;
+    max-width: 800px; /* تحديد عرض أقصى */
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* الشعار */
 .logo {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 150px;
+    width: 20%; /* النسبة المئوية لجعل الشعار يتكيف مع الشاشة */
+    height: auto;
 }
 
+/* نص الإدخال */
 input {
     padding: 10px;
     font-size: 16px;
     margin: 10px;
+    width: 80%; /* النسبة المئوية لجعل الحقل يتناسب مع الشاشة */
+    max-width: 400px; /* الحد الأقصى للعرض */
 }
 
+/* الأزرار */
 button {
-    border-radius:35px;
-    padding: 20px 30px;
-    background-color: #017257;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff6600;
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 300px;
 }
 
+/* الزر عند التمرير عليه */
 button:hover {
-    background-color: #017257;
+    background-color: #cc5500;
 }
 
-
+/* التنسيق للزر التحميل */
 .download-btn {
-    border-radius: 35px;
-    background-color: #017257;
+    background-color: #00352B;
 }
 
 .download-btn:hover {
-    border-radius: 35px;
-    background-color: #017257;
+    background-color: #00221A;
 }
-footer {
+
+/* القماش */
+canvas {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* الفوتر */
+.footer {
     position: absolute;
     bottom: 10px;
     width: 100%;
@@ -60,16 +84,15 @@ footer {
     color: #333;
 }
 
+/* تخصيص الألوان */
 .footer span {
-    color: #2BB673; /* اللون المميز لهلا */
+    color: #2BB673;
     font-weight: bold;
 }
-canvas {
-    border-radius: 25px;
-    display: block;
-    margin: 20px auto;
-    border: 2px solid #ddd;
-}
+
+/* Media Queries للأجهزة المختلفة */
+
+/* للأجهزة المحمولة (أقل من 768px) */
 @media (max-width: 768px) {
     .logo {
         width: 30%; /* تكبير الشعار قليلاً في الشاشات الصغيرة */
