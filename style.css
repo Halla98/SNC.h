@@ -70,3 +70,33 @@ canvas {
     margin: 20px auto;
     border: 2px solid #ddd;
 }
+@media (max-width: 768px) {
+    .logo {
+        width: 30%; /* تكبير الشعار قليلاً في الشاشات الصغيرة */
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}
+
+/* للأجهزة الكبيرة مثل الكمبيوتر (أكبر من 768px) */
+@media (min-width: 769px) {
+    .logo {
+        width: 20%; /* شعار أصغر قليلاً في الشاشات الكبيرة */
+    }
+
+    button {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
