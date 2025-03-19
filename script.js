@@ -38,7 +38,7 @@ addNameBtn.addEventListener("click", function () {
 
 downloadBtn.addEventListener("click", function () {
     const link = document.createElement("a");
-    link.download = "تصميمي.png";
+    link.download = "eidsnc.png";
     link.href = canvas.toDataURL("image/png");
     link.click();
 });
