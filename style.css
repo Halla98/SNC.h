@@ -64,20 +64,9 @@ footer {
     color: #2BB673; /* اللون المميز لهلا */
     font-weight: bold;
 }
-/* للأجهزة المحمولة (أقل من 768px) */
-@media (max-width: 768px) {
-    .logo {
-        width: 30; /* تكبير الشعار قليلاً في الشاشات الصغيرة */
-    }
-
-    button {
-        padding: 12px 20px;
-        font-size: 16px;
-    }
-
-    .footer {
-        font-size: 12px;
-    }
+canvas {
+    border-radius: 25px;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ddd;
 }
-
-
