@@ -1,81 +1,57 @@
 @font-face {
     font-family: "Tajawal-Medium";
     src: url("Tajawal-Medium.woff2") format("woff2");
-/* الأساسيات */
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
 }
 
-/* الحاوية الرئيسية */
 .container {
     position: relative;
     margin-top: 20px;
-    width: 100%;
-    max-width: 800px; /* تحديد عرض أقصى */
-    margin-left: auto;
-    margin-right: auto;
 }
 
-/* الشعار */
 .logo {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 20%; /* النسبة المئوية لجعل الشعار يتكيف مع الشاشة */
-    height: auto;
+    width: 150px%;
 }
 
-/* نص الإدخال */
 input {
     padding: 10px;
     font-size: 16px;
     margin: 10px;
-    width: 80%; /* النسبة المئوية لجعل الحقل يتناسب مع الشاشة */
-    max-width: 400px; /* الحد الأقصى للعرض */
 }
 
-/* الأزرار */
 button {
-    padding: 15px 30px;
-    font-size: 18px;
-    background-color: #ff6600;
+    border-radius:35px;
+    padding: 20px 30px;
+    background-color: #017257;
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
-    width: 80%;
-    max-width: 300px;
+    font-size: 16px;
 }
 
-/* الزر عند التمرير عليه */
 button:hover {
-    background-color: #cc5500;
+    background-color: #017257;
 }
 
-/* التنسيق للزر التحميل */
+
 .download-btn {
-    background-color: #00352B;
+    border-radius: 35px;
+    background-color: #017257;
 }
 
 .download-btn:hover {
-    background-color: #00221A;
+    border-radius: 35px;
+    background-color: #017257;
 }
-
-/* القماش */
-canvas {
-    display: block;
-    margin: 20px auto;
-    border: 2px solid #ddd;
-    width: 100%;
-    max-width: 500px;
-}
-
-/* الفوتر */
-.footer {
+footer {
     position: absolute;
     bottom: 10px;
     width: 100%;
@@ -84,14 +60,10 @@ canvas {
     color: #333;
 }
 
-/* تخصيص الألوان */
 .footer span {
-    color: #2BB673;
+    color: #2BB673; /* اللون المميز لهلا */
     font-weight: bold;
 }
-
-/* Media Queries للأجهزة المختلفة */
-
 /* للأجهزة المحمولة (أقل من 768px) */
 @media (max-width: 768px) {
     .logo {
