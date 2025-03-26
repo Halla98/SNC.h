@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Tajawal-Medium";
-    src: url("Tajawal-Medium.woff2") format("woff2");
+    src: url("ArbFONTS-Tajawal-Medium.woff2") format("woff2"); /* تأكد من أن المسار صحيح */
 }
 
 body {
@@ -28,7 +28,7 @@ input {
 }
 
 button {
-    border-radius:35px;
+    border-radius: 35px;
     padding: 20px 30px;
     background-color: #017257;
     color: white;
