@@ -69,5 +69,5 @@ canvas {
     max-height: 60vh; /* يجعل التصميم متوسط الحجم كنسبة من الشاشة */
     display: block;
     margin: auto; /* يوسّطه في الصفحة */
-    border: 1px solid #ccc; /* إضافة إطار بسيط لتمييزه */
+
 }
