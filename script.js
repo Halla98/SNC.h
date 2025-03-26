@@ -1,25 +1,24 @@
 const userNameInput = document.getElementById("userName");
 const addNameBtn = document.getElementById("addNameBtn");
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
 const downloadBtn = document.getElementById("downloadBtn");
 
-const canvas = document.getElementById("certificateCanvas");
-const ctx = canvas.getContext("2d");
-
 const img = new Image();
-img.src = "design.png"; // استخدم اسم الصورة الصحيح
+img.src = "design.png";  // تأكد من أن هذه الصورة موجودة في نفس المجلد
 
 img.onload = function () {
     // ضبط حجم الـ canvas بناءً على حجم الصورة الأصلية
     canvas.width = img.width * 0.85;  // تكبير بسيط
     canvas.height = img.height * 0.85;
 
-    // رسم الصورة داخل الـ canvas
+    // رسم الصورة داخل الـ canvas بعد تحميلها
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 };
 
 function drawCanvas(name = "") {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.drawImage(img, 0, 0, canvas.width, canvas.height); // رسم التصميم في الخلفية
+    ctx.drawImage(img, 0, 0); // رسم التصميم في الخلفية
 
     if (name) {
         ctx.font = "27.88px 'Tajawal', sans-serif"; // استخدام خط تجوال
@@ -38,4 +37,13 @@ addNameBtn.addEventListener("click", function () {
         return;
     }
     drawCanvas(name);
+});
+
+// تحميل الصورة
+downloadBtn.addEventListener("click", function () {
+    const dataUrl = canvas.toDataURL("image/png");
+    const link = document.createElement("a");
+    link.href = dataUrl;
+    link.download = "EidCard.png";
+    link.click();
 });
