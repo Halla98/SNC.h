@@ -35,7 +35,11 @@ addNameBtn.addEventListener("click", function () {
     }
     drawCanvas(name);
 });
+const canvas = document.getElementById("certificateCanvas");
+const ctx = canvas.getContext("2d");
 
+canvas.width = 800;  // ضبط العرض
+canvas.height = 500; 
 downloadBtn.addEventListener("click", function () {
     const link = document.createElement("a");
     link.download = "eidsnc.png";
