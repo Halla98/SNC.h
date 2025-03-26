@@ -38,11 +38,15 @@ addNameBtn.addEventListener("click", function () {
 const canvas = document.getElementById("certificateCanvas");
 const ctx = canvas.getContext("2d");
 
-canvas.width = 900;  // زيادة العرض قليلاً
-canvas.height = 550; // زيادة الارتفاع قليلاً
-downloadBtn.addEventListener("click", function () {
-    const link = document.createElement("a");
-    link.download = "eidsnc.png";
-    link.href = canvas.toDataURL("image/png");
-    link.click();
+const img = new Image();
+img.src = "design.png"; // استخدم اسم الصورة الصحيح
+
+img.onload = function () {
+    // ضبط حجم الـ canvas بناءً على حجم الصورة الأصلية
+    canvas.width = img.width * 0.85;  // تكبير بسيط
+    canvas.height = img.height * 0.85;
+
+    // رسم الصورة داخل الـ canvas
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+};
 });
