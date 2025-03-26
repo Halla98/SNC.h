@@ -69,4 +69,11 @@ canvas {
     max-height: 65vh; /* نسبة ارتفاع متوازنة */
     display: block;
     margin: auto; /* يوسّطه في الصفحة */
+    
+    canvas {
+    display: block;
+    margin: auto;
+    max-width: 85%;
+    max-height: 65vh;
+}
 }
