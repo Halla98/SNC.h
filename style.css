@@ -28,7 +28,7 @@ input {
 }
 
 button {
-    border-radius: 35px;
+    border-radius:35px;
     padding: 20px 30px;
     background-color: #017257;
     color: white;
@@ -38,17 +38,17 @@ button {
 }
 
 button:hover {
-    background-color: #025f47;
+    background-color: #017257;
 }
 
 .download-btn {
     border-radius: 35px;
     background-color: #017257;
-    margin-top: 20px; /* ليكون أسفل الصورة */
 }
 
 .download-btn:hover {
-    background-color: #025f47;
+    border-radius: 35px;
+    background-color: #017257;
 }
 
 footer {
@@ -65,11 +65,9 @@ footer {
     font-weight: bold;
 }
 
-/* تصحيح الـ canvas */
 canvas {
+    max-width: 85%; /* يجعل التصميم أكبر قليلًا */
+    max-height: 65vh; /* نسبة ارتفاع متوازنة */
     display: block;
-    margin: auto;
-    max-width: 85%;
-    max-height: 65vh;
-    border-radius: 20px; /* جعل الأطراف مقوسة */
+    margin: auto; /* يوسّطه في الصفحة */
 }
