@@ -38,8 +38,8 @@ addNameBtn.addEventListener("click", function () {
 const canvas = document.getElementById("certificateCanvas");
 const ctx = canvas.getContext("2d");
 
-canvas.width = 800;  // ضبط العرض
-canvas.height = 500; 
+canvas.width = 900;  // زيادة العرض قليلاً
+canvas.height = 550; // زيادة الارتفاع قليلاً
 downloadBtn.addEventListener("click", function () {
     const link = document.createElement("a");
     link.download = "eidsnc.png";
