@@ -24,7 +24,7 @@ function drawCanvas(name = "") {
         ctx.textAlign = "center";
         
         // إنزال النص قليلاً للأسفل
-        ctx.fillText(name, canvas.width / 2, canvas.height -188);  
+        ctx.fillText(name, canvas.width / 2, canvas.height -190);  
     }
 }
 
