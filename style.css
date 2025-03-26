@@ -65,8 +65,9 @@ footer {
     font-weight: bold;
 }
 canvas {
-    border-radius: 25px;
+    max-width: 80%; /* يحدد الحد الأقصى للعرض */
+    max-height: 60vh; /* يجعل التصميم متوسط الحجم كنسبة من الشاشة */
     display: block;
-    margin: 20px auto;
-    border: 2px solid #ddd;
+    margin: auto; /* يوسّطه في الصفحة */
+    border: 1px solid #ccc; /* إضافة إطار بسيط لتمييزه */
 }
