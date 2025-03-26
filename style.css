@@ -44,6 +44,7 @@ button:hover {
 .download-btn {
     border-radius: 35px;
     background-color: #017257;
+    margin-top: 20px; /* ليكون أسفل الصورة */
 }
 
 .download-btn:hover {
@@ -70,4 +71,5 @@ canvas {
     margin: auto;
     max-width: 85%;
     max-height: 65vh;
+    border-radius: 20px; /* جعل الأطراف مقوسة */
 }
